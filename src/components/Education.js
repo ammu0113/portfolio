@@ -17,6 +17,7 @@ const Education = () => {
     degree: "Master's degree, Computer Science",
     school: "State University of New York",
     duration: "August 2022 - May 2024",
+    grade: 3.36,
   };
 
   return (
@@ -28,7 +29,10 @@ const Education = () => {
         <Col md={12}>
           <Card className="education-card">
             <CardBody>
-              <CardTitle tag="h3">{education.degree}</CardTitle>
+              <CardTitle tag="h3">
+                {education.degree}
+                <small className=""> C.G.P.A :{education.grade}</small>
+              </CardTitle>
               <CardSubtitle tag="h4" className="mb-2 text-muted">
                 {education.school}
               </CardSubtitle>

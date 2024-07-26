@@ -1,5 +1,5 @@
 // Experience.js
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import { FaBriefcase, FaCalendarAlt, FaCaretRight } from "react-icons/fa";
 // import "./Experience.scss";
@@ -7,9 +7,13 @@ import { FaBriefcase, FaCalendarAlt, FaCaretRight } from "react-icons/fa";
 const Experience = () => {
   const [activeCompany, setActiveCompany] = useState(0);
 
+  useEffect(() => {
+    setActiveCompany(0);
+  }, []);
+
   const experiences = [
     {
-      company: "Semtosys Private limited",
+      company: "ENDIVITE Technologies",
       position: "Full-stack Developer",
       duration: "August 2020 - June 2022",
       responsibilities: [
@@ -36,6 +40,8 @@ const Experience = () => {
       ],
     },
   ];
+
+  console.log("activeCompany", activeCompany);
 
   return (
     <Container fluid className="experience-container">

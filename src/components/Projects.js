@@ -5,39 +5,13 @@ import { FaFolder, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 const Project = () => {
   const projects = [
     {
-      title: "Integrating Algolia Search with WordPress Multisite",
+      title: "Personal Portfolio",
       description:
-        "Building a custom multisite compatible WordPress plugin to build global search with Algolia",
-      tags: ["Algolia", "WordPress", "PHP"],
-    },
-    {
-      title: "Time to Have More Fun",
-      description:
-        "A single page web app for helping me choose where to travel, built with Next.js, Firebase, and Tailwind CSS",
-      tags: ["Next.js", "Tailwind CSS", "Firebase"],
-    },
-    {
-      title: "Building a Headless Mobile App CMS From Scratch",
-      description:
-        "Find out how we built a custom headless CMS with Node, Express, and Firebase for a project at Upstatement",
-      tags: ["Node", "Express", "Firebase", "Vue"],
-    },
-    {
-      title: "OctoProfile",
-      description:
-        "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
-      tags: ["GitHub API", "Chart.js"],
-    },
-    {
-      title: "Google Keep Clone",
-      description: "A simple Google Keep clone built with Vue and Firebase.",
-      tags: ["Vue", "Firebase"],
-    },
-    {
-      title: "Apple Music Embeddable Web Player Widget",
-      description:
-        "Embeddable web player widget for Apple Music that lets users log in and listen to full song playback in the browser leveraging MusicKit.js.",
-      tags: ["MusicKit.js", "JS"],
+        "This ia dynamic mukltiple page portfolio applictaion developed in react",
+      live: "https://ammu0113.github.io/portfolio/#",
+      sourcecode: "https://github.com/ammu0113/portfolio",
+      target: "_blank",
+      tags: ["React", "sass", "javascript", "reactstrap", "react-router"],
     },
   ];
 

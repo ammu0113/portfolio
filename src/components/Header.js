@@ -40,12 +40,18 @@ const Header = () => {
           style={{ display: "flex", alignItems: "center" }}
         >
           <li>
-            <a href="/" onClick={toggleMenu}>
+            <a
+              href={`${window.location.origin}${window.location.pathname}#`}
+              onClick={toggleMenu}
+            >
               <img src={logo} style={{ width: "30px", height: "30px" }} />
             </a>
           </li>
           <li>
-            <a href="/" onClick={toggleMenu}>
+            <a
+              href={`${window.location.origin}${window.location.pathname}#`}
+              onClick={toggleMenu}
+            >
               Home
             </a>
           </li>
@@ -55,27 +61,42 @@ const Header = () => {
             </a>
           </li> */}
           <li>
-            <a href="/experience" onClick={toggleMenu}>
+            <a
+              href={`${window.location.origin}${window.location.pathname}#/experience`}
+              onClick={toggleMenu}
+            >
               Experience
             </a>
           </li>
           <li>
-            <a href="/skills" onClick={toggleMenu}>
+            <a
+              href={`${window.location.origin}${window.location.pathname}#/skills`}
+              onClick={toggleMenu}
+            >
               Skills
             </a>
           </li>
           <li>
-            <a href="/education" onClick={toggleMenu}>
+            <a
+              href={`${window.location.origin}${window.location.pathname}#/education`}
+              onClick={toggleMenu}
+            >
               Education
             </a>
           </li>
           <li>
-            <a href="/projects" onClick={toggleMenu}>
+            <a
+              href={`${window.location.origin}${window.location.pathname}#/projects`}
+              onClick={toggleMenu}
+            >
               Projects
             </a>
           </li>
           <li>
-            <a href="/contact" onClick={toggleMenu}>
+            <a
+              href={`${window.location.origin}${window.location.pathname}#/contact`}
+              onClick={toggleMenu}
+            >
               Contact
             </a>
           </li>

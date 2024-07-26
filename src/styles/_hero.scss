@@ -8,7 +8,7 @@
 
 .hero-page {
   background-color: $color-background;
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,7 +105,8 @@
 
     &:hover {
       background-color: $button-color;
-      color: white;
+      color: $color-text-primary;
+      
     }
   }
 }
@@ -113,6 +114,7 @@
 @media (max-width: $breakpoint-mobile) {
   .hero-container {
     flex-direction: column;
+    padding: 30px 10px;
   }
 
   .image-section {
@@ -122,6 +124,7 @@
 
   .content-section {
     text-align: center;
+    padding: 1rem;
 
     .social-links {
       justify-content: center;
