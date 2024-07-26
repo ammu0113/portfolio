@@ -1,0 +1,130 @@
+// $color-primary: #66A5AD;
+// $color-border: darken($color-primary, 10%);
+// $color-text-primary: $color-primary;
+// $color-text-hover: darken($color-primary, 10%);
+// $button-color: $color-primary;
+// $breakpoint-mobile: 768px;
+// $color-background: #f2f2f2;
+
+.hero-page {
+  background-color: $color-background;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.hero-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.image-section {
+  flex: 1;
+  position: relative;
+  padding-right: 2rem;
+
+  .image-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .profile-image {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    filter:drop-shadow(24px 24px $color-primary);
+    border-radius: 2px;
+  }
+
+  .color-block {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 300px;
+    height: 100%;
+    background-color: $color-primary;
+    z-index: 1;
+  }
+}
+
+.content-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+
+  h1 {
+    color: $color-text-primary;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    color: $color-text-hover;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: darken($color-text-primary, 20%);
+    margin-bottom: 1rem;
+  }
+
+  .social-links {
+    margin-bottom: 1rem;
+
+    a {
+      color: $color-text-primary;
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $color-text-hover;
+      }
+    }
+  }
+
+  .custom-button {
+    background-color: transparent;
+    border: 1px solid $button-color;
+    color: $color-text-primary;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+
+    &:hover {
+      background-color: $button-color;
+      color: white;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .image-section {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .content-section {
+    text-align: center;
+
+    .social-links {
+      justify-content: center;
+    }
+  }
+}

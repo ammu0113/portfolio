@@ -1,0 +1,122 @@
+@import "./variables";
+.experience-container {
+  background-color: $color-background;
+  color: $color-text-primary;
+  padding: 50px 10px 0px 10px ;
+  height: 100%;
+
+  .section-heading {
+    color: $color-text-primary;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .experience-content {
+    display: flex;
+  }
+
+  .company-tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .company-tab {
+      background-color: transparent;
+      color: $color-text-primary;
+      border: none;
+      border-left: 2px solid $color-text-primary;
+      padding: 10px 20px;
+      font-size: 14px;
+      text-align: left;
+      transition: all 0.25s ease;
+
+      &:hover {
+        background-color: $button-color;
+        color: $color-text-hover;
+        cursor: pointer;
+      }
+
+      &.active {
+        color: $color-text-hover;
+        border-left: 2px solid $color-text-hover;
+      }
+    }
+  }
+
+  .job-info {
+    padding: 10px;
+    h3 {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 5px;
+      margin-top: 0px !important;
+
+      .job-title {
+        color: $color-text-hover;
+      }
+
+      .company-name {
+        color: $color-text-primary;
+      }
+    }
+
+    .job-duration {
+      font-size: 14px;
+      color: $color-text-primary;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .job-responsibilities {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 10px;
+        font-size: 16px;
+
+        .bullet-icon {
+          position: absolute;
+          left: 0;
+          top: 5px;
+          color: $color-text-hover;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .experience-container {
+    padding: 30px 10px;
+
+    .experience-content {
+      flex-direction: column;
+    }
+
+    .company-tabs {
+      flex-direction: row;
+      overflow-x: auto;
+      margin-bottom: 20px;
+
+      .company-tab {
+        border-left: none;
+        border-bottom: 2px solid $color-border;
+
+        &.active {
+          border-left: none;
+          border-bottom: 2px solid $color-text-hover;
+        }
+      }
+    }
+  }
+}

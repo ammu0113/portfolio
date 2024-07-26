@@ -1,0 +1,14 @@
+@import "./variables";
+@import "./portfolio";
+@import "./header";
+@import "./contact";
+@import "./skills";
+@import "./projects";
+@import "./experience";
+@import "./education";
+@import "./hero";
+@import "./about";
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: $color-background;
+}

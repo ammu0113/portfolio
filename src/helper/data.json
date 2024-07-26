@@ -1,0 +1,61 @@
+{
+  "personalInfo": {
+    "name": "Amulya Bandla",
+    "email": "amulya.bandla01@gmail.com",
+    "mobile": "845 419-9560",
+    "address": "#4 SouthSide Avenue",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "image": "",
+    "title": "Fashion Designer",
+    "background_img": "https://edtechmethods.com/wp-content/uploads/2023/05/joanna-kosinska-9gfGDbxuqrU-unsplash-2000x1200.jpg"
+  },
+  "Education": [
+    {
+      "Title": "State University of NewYork",
+      "grade": "3.42",
+      "start_date": "08-2021",
+      "end_date": "05-2024",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+    },
+    {
+      "Title": "State University of NewYork",
+      "grade": "3.42",
+      "start_date": "08-2021",
+      "end_date": "05-2024",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Project Name",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "link": "https://www.google.com",
+      "skills": ["HtML", "CSS", "Java", "Javascript"]
+    },
+    {
+      "title": "Project Name",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "link": "https://www.google.com",
+      "skills": ["HtML", "CSS", "Java", "Javascript"]
+    }
+  ],
+  "skills": ["Javascript", "Java", "HtML", "CSS"],
+  "social info": [
+    {
+      "label": "LinkedIn",
+      "link": "https://www.linkedin.com/in/amulya-bandla-666b97318/"
+    },
+    {
+      "label": "Instagram",
+      "link": "https://www.google.com"
+    },
+    {
+      "label": "Instagram",
+      "link": "https://www.google.com"
+    },
+    {
+      "label": "Instagram",
+      "link": "https://www.google.com"
+    }
+  ]
+}

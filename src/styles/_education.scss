@@ -1,0 +1,60 @@
+@import "./variables";
+
+.education-container {
+  background-color: $color-background;
+  color: $color-text-primary;
+  padding: 50px 10px 10px 10px ;
+  height: 100%;
+
+  .section-heading {
+    color: $color-text-primary;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .education-card {
+    background-color: $color-background;
+    border: 1px solid $color-border;
+    transition: all 0.3s ease;
+    border-radius: 16px;
+    &:hover {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    h3 {
+      color: $color-text-hover;
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    h4 {
+      color: $color-text-primary;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    .card-text {
+      color: $color-text-primary;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .education-container {
+    padding: 30px 10px;
+  }
+}
