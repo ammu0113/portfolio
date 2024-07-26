@@ -9,7 +9,7 @@ const HeroPage = () => {
       <div className="hero-container">
         <div className="image-section">
           <div className="image-container">
-            <img src={image} alt="Profile" className="profile-image" />
+            <img src={image} alt="Amulya Bandla - Full Stack Developer" className="profile-image" />
             {/* <div className="color-block"></div> */}
           </div>
         </div>
