@@ -15,6 +15,8 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 // import Hero from "./components/Hero";
 import About from "./components/About";
+// import "bootstrap/dist/css/bootstrap.css";
+
 import HeroPage from "./components/Hero";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

@@ -2,6 +2,7 @@ import React from "react";
 import { FaLinkedin, FaEnvelope } from "react-icons/fa";
 // import "./HeroPage.scss";
 import image from "../assets/images/ammu_image.jpg";
+import resume from "../assets/files/MyResume.pdf";
 
 const HeroPage = () => {
   return (
@@ -9,7 +10,11 @@ const HeroPage = () => {
       <div className="hero-container">
         <div className="image-section">
           <div className="image-container">
-            <img src={image} alt="Amulya Bandla - Full Stack Developer" className="profile-image" />
+            <img
+              src={image}
+              alt="Amulya Bandla - Full Stack Developer"
+              className="profile-image"
+            />
             {/* <div className="color-block"></div> */}
           </div>
         </div>
@@ -41,7 +46,10 @@ const HeroPage = () => {
               <FaLinkedin />
             </a>
           </div> */}
-          <button className="custom-button">Download CV</button>
+
+          <a href={resume} download="AmulyaResume" className="custom-button">
+            Download CV
+          </a>
         </div>
       </div>
     </div>

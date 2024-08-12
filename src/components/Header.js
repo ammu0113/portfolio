@@ -6,6 +6,7 @@ import {
   FaInstagram,
   FaBars,
   FaTimes,
+  FaGithub,
 } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
 import logo from "../assets/logo.svg";
@@ -109,15 +110,15 @@ const Header = () => {
           >
             <FaLinkedin />
           </a>
-          <a href="#" className="icon">
-            <FaMedium />
+          <a href="https://github.com/ammu0113" className="icon">
+            <FaGithub />
           </a>
-          <a href="#" className="icon">
+          {/* <a href="#" className="icon">
             <FaYoutube />
           </a>
           <a href="#" className="icon">
             <FaInstagram />
-          </a>
+          </a> */}
         </div>
       </nav>
       {isMenuOpen && <div className="overlay" onClick={toggleMenu}></div>}

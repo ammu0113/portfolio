@@ -1,6 +1,7 @@
 import React from "react";
 
 import { FaFolder, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { Col, Row } from "reactstrap";
 
 const Project = () => {
   const projects = [
@@ -21,23 +22,29 @@ const Project = () => {
       {/* <a href="#" className="view-archive">
         view the archive
       </a> */}
-      <div className="projects-grid">
+      <Row className="projects-grid">
         {projects.map((project, index) => (
-          <div key={index} className="project-card">
+          <Col xs={12} md={2} key={index} className="project-card">
             <div className="project-content">
               <div className="project-header">
                 <span className="folder-icon">
                   <FaFolder size={20} />
                 </span>
                 <div className="project-links">
-                  {index % 2 === 1 && (
+                  {project.sourcecode && (
                     <span className="github-icon">
-                      <FaGithub size={20} />
+                      <a href={`${project.sourcecode}`} target="__blank">
+                        <FaGithub size={20} />
+                      </a>
                     </span>
                   )}
-                  <span className="external-link-icon">
-                    <FaExternalLinkAlt size={20} />
-                  </span>
+                  {project.live && (
+                    <span className="external-link-icon">
+                      <a href={`${project.live}`} target="__blank">
+                        <FaExternalLinkAlt size={20} />
+                      </a>
+                    </span>
+                  )}
                 </div>
               </div>
               <h3>{project.title}</h3>
@@ -50,9 +57,9 @@ const Project = () => {
                 </span>
               ))}
             </div>
-          </div>
+          </Col>
         ))}
-      </div>
+      </Row>
     </div>
   );
 };

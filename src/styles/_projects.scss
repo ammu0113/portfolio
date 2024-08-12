@@ -2,6 +2,8 @@
 .projects-container {
   background-color: $color-background;
   padding: 4rem 2rem;
+  height: 100%;
+  max-width: 300px;
   
   h1 {
     color: $color-text-hover;
@@ -63,10 +65,13 @@
       span {
         margin-left: 0.5rem;
         cursor: pointer;
-        color: $color-text-primary;
-        
-        &:hover {
-          color: $color-text-hover;
+        & a{
+          color: $color-text-primary;
+          
+          &:hover {
+            color: $color-text-hover;
+          }
+
         }
       }
     }
@@ -103,6 +108,7 @@
 @media (max-width: $breakpoint-mobile) {
   .projects-container {
     padding: 2rem 1rem;
+    max-width: 100%;
   }
   
   .projects-grid {
