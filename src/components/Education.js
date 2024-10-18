@@ -26,7 +26,7 @@ const Education = () => {
         <FaGraduationCap /> Education
       </h2>
       <Row>
-        <Col md={12}>
+        <Col md={3}>
           <Card className="education-card">
             <CardBody>
               <CardTitle tag="h3">

@@ -2,7 +2,7 @@ import React from "react";
 import { FaLinkedin, FaEnvelope } from "react-icons/fa";
 // import "./HeroPage.scss";
 import image from "../assets/images/ammu_image.jpg";
-import resume from "../assets/files/MyResume.pdf";
+import resume from "../assets/files/AmulyaBandla.docx";
 
 const HeroPage = () => {
   return (

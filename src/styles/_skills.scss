@@ -49,13 +49,13 @@
     &-bar {
       flex: 3;
       height: 10px;
-      background-color: $color-border;
       border-radius: 5px;
+      background-color: $color-text-primary !important;
       overflow: hidden;
-
+      
       &-level {
-        height: 100%;
-        background-color: $color-text-primary;
+        height: 100% !important;
+        background-color: darken($color-border,5%);
       }
     }
   }
