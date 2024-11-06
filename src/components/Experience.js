@@ -18,19 +18,15 @@ const Experience = () => {
       duration: "March 2023 - Present",
       responsibilities: [
         "Proficient in building comprehensive web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js) and GraphQL.",
-
         "Experienced in creating RESTful APIs, implementing server-side logic, and optimizing database performance using Node.js, Express.js, and MongoDB.",
-
         "Skilled in developing responsive, component-based user interfaces using React.js, Redux for state management, and modern HTML5/CSS3 techniques.",
-
         "Adept at working with both SQL and NoSQL databases, particularly MongoDB, including query optimization and data modeling.",
-
         "Familiar with microservices architecture, code reviews, and deploying applications on cloud platforms like OpenStack, emphasizing scalability and performance.",
       ],
     },
     {
       company: "TATA Teleservices",
-      position: "React JS Developer ",
+      position: "React JS Developer",
       duration: "Jan 2021 - July 2022",
       responsibilities: [
         "Expertise in React.js ecosystem: Developed reusable components, implemented state management with Redux and React Hooks, and utilized React Router for seamless navigation.",
@@ -66,8 +62,6 @@ const Experience = () => {
     },
   ];
 
-  console.log("activeCompany", activeCompany);
-
   return (
     <Container fluid className="experience-container">
       <h2 className="section-heading">
@@ -83,12 +77,12 @@ const Experience = () => {
               }`}
               onClick={() => setActiveCompany(index)}
             >
-              {exp.company.slice(0, 20)}...
+              {exp.company}
             </Button>
           ))}
         </Col>
         <Col md={9} className="job-info">
-          <h3 className="m-0">
+          <h3>
             <span className="job-title">
               {experiences[activeCompany].position}
             </span>

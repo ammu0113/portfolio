@@ -22,16 +22,11 @@ const HeroPage = () => {
           <h1>Amulya Bandla</h1>
           <h2>Full-stack Developer</h2>
           <p>
-            I am a full-stack developer currently pursuing my Master's degree in
-            Computer Science at the State University of New York. With over 3
-            years of professional experience in web development, I've had the
-            opportunity to work on various exciting projects.
-          </p>
-          <p>
-            My expertise lies in developing robust web applications using the
-            MERN stack. I'm passionate about creating efficient, scalable
-            solutions and always eager to take on new challenges in the
-            ever-evolving field of web development.
+            Senior Full Stack Developer with 7+ years of expertise crafting
+            scalable web solutions. Skilled in modern JavaScript ecosystems
+            (MERN Stack), cloud architecture, and microservices. Proven track
+            record at Qualcomm and TATA of transforming complex requirements
+            into elegant, user-centric applications that drive business growth.
           </p>
           {/* <div className="social-links">
             <a href="mailto:amulya.bandla01@gmail.com" aria-label="Email">
